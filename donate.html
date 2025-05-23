@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Donate - Empower NGO</title>
+  <link rel="stylesheet" href="don.css">
+  <link rel="stylesheet" href="style100.css">
+  <link rel="stylesheet" href="style99.css">
+  <link rel="stylesheet" href="section.css">
+  <link rel="stylesheet" href="style98.css">
+  <!-- FontAwesome for icons (optional) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header/Navbar -->
+  <header>
+    <div class="nav-container">
+        <div class="logo">
+            <img src="C:\Users\Lenovo\Pictures\Saved Pictures\logo.jpg" alt="NGO Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="ngo.html">Home</a></li>
+                <li><a href="aboutSection.html">About</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="#">Donate</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+  <!-- Donate Section -->
+  <section id="donateSection">
+    <div class="section-title">
+      <h2>Donate Now</h2>
+      <p>Your contribution can change lives. Support our cause today!</p>
+    </div>
+
+    <div class="donate-container">
+      <form class="donation-form" action="donation.php" method="post">
+        <div class="form-group">
+          <label for="donationAmount">Donation Amount</label>
+          <input type="number" id="donationAmount" name="donationAmount" placeholder="$100" required>
+        </div>
+        <div class="form-group">
+          <label for="cardNumber">Card Number</label>
+          <input type="text" id="cardNumber" name="cardNumber" placeholder="xxxx-xxxx-xxxx-xxxx" required>
+        </div>
+        <div class="form-group inline-group">
+          <div>
+            <label for="expiry">Expiry Date</label>
+            <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+          </div>
+          <div>
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" name="cvv" placeholder="123" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="donorName">Name on Card</label>
+          <input type="text" id="donorName" name="donorName" placeholder="Your Name" required>
+        </div>
+        <button type="submit" class="cta-btn donate-btn">Donate</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <img src="C:\Users\Lenovo\Pictures\Saved Pictures\logo.jpg" alt="NGO Logo" class="footer-logo">
+        <p>Empowering communities for a brighter tomorrow. Thank you for supporting our mission!</p>
+      </div>
+  
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="ngo.html">Home</a></li>
+          <li><a href="aboutSection.html">About</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p><i class="fas fa-envelope"></i> info@empowerngo.org</p>
+        <p><i class="fas fa-phone"></i> +91 9876543210</p>
+        <div class="social-icons">
+          <a href="#"><img src="C:\Users\Lenovo\Downloads\social.png"></img></a> 
+          <a href="#"><img src="C:\Users\Lenovo\Downloads\instagram (1).png"></img></a> 
+          <a href="#"><img src="C:\Users\Lenovo\Downloads\twitter (1).png"></img></a>
+          <a href="#"><img src="C:\Users\Lenovo\Downloads\linkedin (1).png"></img></a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>&copy; 2025 Empower NGO. All Rights Reserved.</p>
+    </div>
+  </footer>
+  
+</body>
+</html>

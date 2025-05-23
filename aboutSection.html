@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us - NGO Website</title>
+
+  <link rel="stylesheet" href="style100.css">
+  <link rel="stylesheet" href="style98.css">
+  <link rel="stylesheet" href="style99.css">
+  <link rel="stylesheet" href="section.css">
+  <!-- <link rel="stylesheet" href="style99.css">
+  <link rel="stylesheet" href="style9.css">
+  <link rel="stylesheet" href="style8.css">  -->
+  
+
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+
+  <!-- Header/Navbar -->
+  <header>
+    <div class="nav-container">
+        <div class="logo">
+            <img src="C:\Users\Lenovo\Pictures\Saved Pictures\logo.jpg" alt="NGO Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="ngo.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+  <!-- About Section with background image -->
+  <section id="aboutSection">
+    <div class="about-overlay">
+      <h1>Who We Are</h1>
+      <p>We are a non-profit organization dedicated to making a difference in the lives of underprivileged communities.<br>
+         Our focus is on education, healthcare, and women empowerment to create a sustainable and brighter future for all.</p>
+      <a href="contact.html" class="cta-btn">Get Involved</a>
+    </div>
+  </section>
+
+  <!-- Counter Section -->
+  <section id="counterSection">
+    <div class="counter-container">
+      <div class="counter-box">
+        <i class="fas fa-hand-holding-heart"></i>
+        <h2 class="counter" data-target="500">0</h2>
+        <p>Projects Completed</p>
+      </div>
+
+      <div class="counter-box">
+        <i class="fas fa-users"></i>
+        <h2 class="counter" data-target="1200">0</h2>
+        <p>Volunteers</p>
+      </div>
+
+      <div class="counter-box">
+        <i class="fas fa-globe"></i>
+        <h2 class="counter" data-target="15000">0</h2>
+        <p>Lives Impacted</p>
+      </div>
+
+      <div class="counter-box">
+        <i class="fas fa-award"></i>
+        <h2 class="counter" data-target="25">0</h2>
+        <p>Awards Won</p>
+      </div>
+    </div>
+  </section>
+  <script>
+    const counters = document.querySelectorAll('.counter');
+  
+    counters.forEach(counter => {
+      counter.innerText = '0';
+  
+      const updateCounter = () => {
+        const target = +counter.getAttribute('data-target');
+        const current = +counter.innerText;
+        const increment = target / 200;
+  
+        if (current < target) {
+          counter.innerText = `${Math.ceil(current + increment)}`;
+          setTimeout(updateCounter, 10);
+        } else {
+          counter.innerText = target;
+        }
+      };
+  
+      updateCounter();
+    });
+  </script>
+  
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <img src="C:\Users\Lenovo\Pictures\Saved Pictures\logo.jpg" alt="NGO Logo" class="footer-logo">
+        <p>Empowering communities for a brighter tomorrow. Thank you for supporting our mission!</p>
+      </div>
+  
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="ngo.html">Home</a></li>
+          <li><a href="aboutSection.html">About</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p><i class="fas fa-envelope"></i> info@empowerngo.org</p>
+        <p><i class="fas fa-phone"></i> +91 9876543210</p>
+        <div class="social-icons">
+          <a href="#"><img src="C:\Users\Lenovo\Downloads\social.png"></img></a> 
+          <a href="#"><img src="C:\Users\Lenovo\Downloads\instagram (1).png"></img></a> 
+          <a href="#"><img src="C:\Users\Lenovo\Downloads\twitter (1).png"></img></a>
+          <a href="#"><img src="C:\Users\Lenovo\Downloads\linkedin (1).png"></img></a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>&copy; 2025 Empower NGO. All Rights Reserved.</p>
+    </div>
+  </footer>
+  
+</body>
+</html>
+
